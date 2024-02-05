@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Star Wars Universe Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application displays character details from the Star Wars universe using the swapi.dev API.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Star Wars Universe Web Application is a simple web application built using React,React query, tailwind css. It fetches data from the swapi.dev API to display character details such as name, hair color, eye color, gender, home planet, and the films that the character has appeared in.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Display a list of characters from the Star Wars universe
+- View detailed information about each character, including their home planet and films they appeared in
+- Unit tests using Jest and React Testing Library
+- End-to-end tests using cypress
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to set up and run the project locally on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have the following installed on your machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (version 20)
+- npm (Node Package Manager)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository to your local machine:
 
-### `npm run eject`
+   ```bash
+   git clone <repository-url>
+   cd star-app
+   npm install
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. To run unit test case:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm run test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. To run e2e test case:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ```bash
+    npm run cypress:run (Please ensure npm start is running on another terminal)
+you might have to setup cypress for first time using docs : https://docs.cypress.io/guides/getting-started/opening-the-app
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
